@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+header {
+  background-color: $color-fondo;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  nav {
+    display:flex;
+    gap: 2rem;
+  }
+
+    a {
+        color: $color-texto;
+        text-decoration: none;
+        font-family: $fuente-principal;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $color-primario;
+        }
+    }
+
+    img{
+        height:5rem;
+        padding-left: 0.5rem;
+    }
+}
