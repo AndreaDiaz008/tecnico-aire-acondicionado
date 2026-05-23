@@ -1,0 +1,93 @@
+@use 'variables' as *;
+
+footer {
+  background: linear-gradient(135deg, #0d0d1a, #00b4ff);
+  padding: 2rem 4rem;
+
+  .footer-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 25rem;
+    margin-bottom: 1rem;
+
+
+     .areas-footer {
+            
+            p {
+                text-align: left;
+            }
+
+            ul {
+                padding-left: 0;
+                font-size: 14px; 
+                
+            }
+        }
+
+        .redes-footer{
+            
+            min-width: 180px;
+            p {
+                text-align: left;
+            }
+
+            ul {
+                
+                padding-left: 0;
+                font-size: 14px; 
+                
+            }
+
+        }
+
+        .pages-footer{
+            
+            p {
+                text-align: left;
+            }
+
+            ul {
+                padding-left: 0;
+                font-size: 14px; 
+            
+            }
+        }
+
+        .titulos-footer
+        {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        
+
+   }
+
+  p {
+    color: $color-texto;
+    font-family: $fuente-principal;
+    text-align: center;
+    
+  }
+
+  a {
+    color: $color-texto;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primario;
+    }
+  }
+
+  li {
+    
+    color: $color-texto;
+    font-family: $fuente-principal;
+  }
+}
+
+.info-footer{
+    font-size: 12px;
+}
+

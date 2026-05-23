@@ -25,6 +25,66 @@ header img {
   padding-left: 0.5rem;
 }
 
+footer {
+  background: linear-gradient(135deg, #0d0d1a, #00b4ff);
+  padding: 2rem 4rem;
+}
+footer .footer-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 25rem;
+  margin-bottom: 1rem;
+}
+footer .footer-box .areas-footer p {
+  text-align: left;
+}
+footer .footer-box .areas-footer ul {
+  padding-left: 0;
+  font-size: 14px;
+}
+footer .footer-box .redes-footer {
+  min-width: 180px;
+}
+footer .footer-box .redes-footer p {
+  text-align: left;
+}
+footer .footer-box .redes-footer ul {
+  padding-left: 0;
+  font-size: 14px;
+}
+footer .footer-box .pages-footer p {
+  text-align: left;
+}
+footer .footer-box .pages-footer ul {
+  padding-left: 0;
+  font-size: 14px;
+}
+footer .footer-box .titulos-footer {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+footer p {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #f3c600;
+}
+footer li {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.info-footer {
+  font-size: 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
