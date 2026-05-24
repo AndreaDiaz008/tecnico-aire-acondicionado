@@ -1,5 +1,5 @@
 header {
-  background-color: #00A3CA;
+  background: linear-gradient(135deg, #0d0d1a, #00b4ff);
   padding: 0.5rem 0.5rem;
   display: flex;
   align-items: center;
@@ -13,12 +13,10 @@ header a {
   color: #ffffff;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
   transition: background-color 0.3s ease;
 }
 header a:hover {
-  background-color: #f3c600;
+  color: #ffd82b;
 }
 header img {
   height: 5rem;
@@ -74,7 +72,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: #f3c600;
+  color: #ffd82b;
 }
 footer li {
   color: #ffffff;
@@ -83,6 +81,21 @@ footer li {
 
 .info-footer {
   font-size: 12px;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
