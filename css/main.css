@@ -87,15 +87,42 @@ footer li {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/hero.png");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 7rem;
 }
-.hero h2 {
-  font-size: 2.5rem;
+
+.marca-desc-hero {
+  padding: 2rem;
+}
+.marca-desc-hero h2 {
+  font-size: 3.3rem;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+}
+.marca-desc-hero p {
+  font-size: 1rem;
+  padding-left: 0.2rem;
+  color: #ffffff;
+  width: 43.75rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-presu-hero {
+  background-color: #ffd82b;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  padding: 1.25rem 2.5rem;
+  border-radius: 1.25rem;
+  font-size: 1.2rem;
+  transition: 0.2s ease;
+}
+.btn-presu-hero:hover {
+  transform: scale(0.95);
+  box-shadow: 0.625rem 0.625rem 1.25rem rgba(10, 18, 54, 0.486);
 }
 
 * {
