@@ -33,7 +33,7 @@ footer .footer-box {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  gap: 25rem;
+  gap: 15rem;
   margin-bottom: 1rem;
 }
 footer .footer-box .areas-footer p {
@@ -41,7 +41,8 @@ footer .footer-box .areas-footer p {
 }
 footer .footer-box .areas-footer ul {
   padding-left: 0;
-  font-size: 14px;
+  list-style: none;
+  font-size: 0.8rem;
 }
 footer .footer-box .redes-footer {
   min-width: 180px;
@@ -51,14 +52,16 @@ footer .footer-box .redes-footer p {
 }
 footer .footer-box .redes-footer ul {
   padding-left: 0;
-  font-size: 14px;
+  list-style: none;
+  font-size: 0.8rem;
 }
 footer .footer-box .pages-footer p {
   text-align: left;
 }
 footer .footer-box .pages-footer ul {
   padding-left: 0;
-  font-size: 14px;
+  list-style: none;
+  font-size: 0.8rem;
 }
 footer .footer-box .titulos-footer {
   font-size: 1.2rem;
@@ -70,19 +73,24 @@ footer p {
   text-align: center;
 }
 footer a {
-  color: #ffffff;
+  color: #d2d2d2;
   text-decoration: none;
 }
 footer a:hover {
   color: #ffd82b;
 }
 footer li {
-  color: #ffffff;
+  color: #d2d2d2;
   font-family: "Poppins", sans-serif;
 }
 
 .info-footer {
   font-size: 12px;
+}
+
+i {
+  font-size: 1.2rem;
+  margin-right: 5px;
 }
 
 .hero {
