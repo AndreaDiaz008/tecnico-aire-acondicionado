@@ -102,6 +102,7 @@ i {
   justify-content: center;
   align-items: center;
   gap: 7rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .marca-desc-hero {
@@ -133,6 +134,78 @@ i {
 .btn-presu-hero:hover {
   transform: scale(0.95);
   box-shadow: 0.625rem 0.625rem 1.25rem rgba(10, 18, 54, 0.486);
+}
+
+.servicios-home {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.servicios-home .titulo-desc-servicios {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.servicios-home .titulo-desc-servicios h2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+.servicios-home .titulo-desc-servicios p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+}
+.servicios-home .cards-servicios {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 8rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.servicios-home .cards-servicios .card-servicio {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  width: 280px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  gap: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.servicios-home .cards-servicios .card-servicio:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.servicios-home .cards-servicios .card-servicio .icono-card {
+  background-color: #e8e8e8;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servicios-home .cards-servicios .card-servicio .icono-card i {
+  font-size: 2rem;
+  color: #555555;
+}
+.servicios-home .cards-servicios .card-servicio h3 {
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  font-weight: 700;
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 0.8rem;
+  width: 100%;
+}
+.servicios-home .cards-servicios .card-servicio p {
+  font-size: 0.85rem;
+  font-family: "Poppins", sans-serif;
+  color: #666666;
+  line-height: 1.6;
 }
 
 * {

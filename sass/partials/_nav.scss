@@ -2,16 +2,16 @@
 
 
 header {
-  background: linear-gradient(135deg, #0d0d1a, #00b4ff);
-  padding: 0.5rem 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  nav {
-    display:flex;
-    gap: 2rem;
-  }
+    background: linear-gradient(135deg, #0d0d1a, #00b4ff);
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+        gap: 2rem;
+    }
 
     a {
         color: $color-texto;
@@ -19,15 +19,15 @@ header {
         text-decoration: none;
         font-family: $fuente-principal;
         transition: background-color 0.3s ease;
-        padding-right: 0.6rem ;
+        padding-right: 0.6rem;
 
         &:hover {
             color: $color-primario;
         }
     }
 
-    img{
-        height:5rem;
+    img {
+        height: 5rem;
         padding-left: 0.5rem;
     }
 }

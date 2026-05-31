@@ -1,37 +1,38 @@
 @use 'variables' as *;
 
-.hero{
-    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/hero.png');
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/hero.png');
     background-size: cover;
     background-position: center;
     height: 350px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 7rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-.marca-desc-hero{
-     padding:2rem;
+.marca-desc-hero {
+    padding: 2rem;
 
-    h2{
+    h2 {
         font-size: 3.3rem;
         color: $color-texto;
         font-family: $fuente-principal;
-        
+
     }
 
-    p{
+    p {
         font-size: 1rem;
         padding-left: .2rem;
         color: $color-texto;
-        width:43.75rem ;
+        width: 43.75rem;
         font-family: $fuente-principal;
     }
 }
 
-.btn-presu-hero{
-    
+.btn-presu-hero {
+
     background-color: $color-primario;
     color: $color-texto;
     text-decoration: none;
@@ -40,12 +41,95 @@
     border-radius: 1.25rem;
     font-size: 1.2rem;
     transition: 0.2s ease;
-    
+
 
     &:hover {
         transform: scale(0.95);
         box-shadow: .625rem .625rem 1.25rem rgba(10, 18, 54, 0.486);
-        
+
     }
 }
 
+.servicios-home {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .titulo-desc-servicios {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            font-family: $fuente-principal;
+        }
+
+        p {
+            font-family: $fuente-principal;
+            font-size: 0.7rem;
+        }
+
+    }
+
+    .cards-servicios {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 8rem;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .card-servicio {
+            background-color: #f8f8f8;
+            border-radius: 20px;
+            width: 280px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1.5rem;
+            gap: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            }
+
+            .icono-card {
+                background-color: #e8e8e8;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    font-size: 2rem;
+                    color: #555555;
+                }
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                font-family: $fuente-principal;
+                color: #222222;
+                font-weight: 700;
+                border-bottom: 2px solid #cccccc;
+                padding-bottom: 0.8rem;
+                width: 100%;
+            }
+
+            p {
+                font-size: 0.85rem;
+                font-family: $fuente-principal;
+                color: #666666;
+                line-height: 1.6;
+            }
+        }
+    }
+
+}
