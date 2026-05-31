@@ -1,5 +1,6 @@
 @use 'variables' as *;
 
+
 header {
   background: linear-gradient(135deg, #0d0d1a, #00b4ff);
   padding: 0.5rem 0.5rem;
@@ -14,9 +15,11 @@ header {
 
     a {
         color: $color-texto;
+        font-size: 0.8rem;
         text-decoration: none;
         font-family: $fuente-principal;
         transition: background-color 0.3s ease;
+        padding-right: 0.6rem ;
 
         &:hover {
             color: $color-primario;

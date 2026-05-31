@@ -11,9 +11,11 @@ header nav {
 }
 header a {
   color: #ffffff;
+  font-size: 0.8rem;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   transition: background-color 0.3s ease;
+  padding-right: 0.6rem;
 }
 header a:hover {
   color: #ffd82b;
