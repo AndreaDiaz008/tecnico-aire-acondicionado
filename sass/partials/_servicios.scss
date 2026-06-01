@@ -1,0 +1,61 @@
+@use 'variables' as *;
+@use 'extends' as *;
+@use 'mixins' as *;
+
+.servicios-titulo {
+    @extend %titulo-seccion;
+    background-image: linear-gradient(125deg, #0d0d1a, #00b3ff52), url('../assets/images/servicios-aire.jpeg');
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+    h1 {
+        font-size: 1.9rem;
+        color: $color-texto;
+        font-family: $fuente-principal;
+    }
+
+}
+
+.servicios-detalle {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    padding: 2rem;
+    
+
+    h2 {
+        @include servicios-detalle-titulo;
+    }
+
+    .aire-lista {
+        @include estilos-lista;
+
+    }
+
+    .electricista-lista {
+        @include estilos-lista;
+    }
+
+    .arreglos-lista {
+        @include estilos-lista;
+    }
+
+
+    .contenedor-titulo-icon {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        .icono-aire {
+            @include icono-card(#2abce9);
+        }
+        .icono-electricista {
+            @include icono-card(rgb(247, 211, 55));
+        }
+        .icono-arreglos {
+            @include icono-card(#c0c0c0);
+        }
+
+    }
+
+}
