@@ -4,9 +4,40 @@
     margin-top: 3rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-size: cover;
     background-position: center;
-    height: 25rem;
     gap: 1rem;
     padding: 7rem;
+}
+
+%texto-lista {
+    font-size: .7rem;
+    font-family: $fuente-principal;
+    color: #000000;
+}
+
+%estilos-lista-servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 235px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: .8rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 1.2rem;
+            font-family: $fuente-principal;
+            color: #333333;
+        }
+
+    }
 }

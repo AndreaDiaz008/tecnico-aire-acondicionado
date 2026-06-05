@@ -4,7 +4,7 @@
 
 .servicios-titulo {
     @extend %titulo-seccion;
-    background-image: linear-gradient(125deg, #0d0d1a, #00b3ff52), url('../assets/images/servicios-aire.jpeg');
+    background-image: linear-gradient(125deg, #0d0d1a, #00b3ff52);// url('../assets/images/servicios-aire.jpeg');
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 
     h1 {
@@ -18,40 +18,120 @@
 .servicios-detalle {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 5rem;
     flex-direction: column;
     padding: 2rem;
-    
 
     h2 {
         @include servicios-detalle-titulo;
     }
 
-    .aire-lista {
-        @include estilos-lista;
+    .fondo-aire {
+        background-image: url('/assets/images/aire-servicios.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: .8rem;
+        padding: 2rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
 
+    .aire-lista {
+        display: flex;
+        gap: 5rem;
+        margin-top: 2rem;
+
+        .categoria {
+            @extend %estilos-lista-servicios;
+
+            .barrita {
+                @include barrita(rgb(0, 124, 226));
+            }
+
+            ul {
+                @include ul-lista(rgb(0, 124, 226));
+            }
+
+
+        }
+    }
+
+    .fondo-electricista {
+        background-image: url('/assets/images/elec-servicios.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: .8rem;
+        padding: 2rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
     .electricista-lista {
-        @include estilos-lista;
+        display: flex;
+        gap: 5rem;
+        margin-top: 2rem;
+
+        .categoria {
+            @extend %estilos-lista-servicios;
+
+            .barrita {
+                @include barrita(rgb(241, 222, 44));
+            }
+
+            ul {
+                @include ul-lista(rgb(241, 222, 44));
+            }
+
+
+        }
+
+    }
+
+    .fondo-arreglos {
+        background-image: url('/assets/images/arreglos-servicios.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: .8rem;
+        padding: 2rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
     .arreglos-lista {
-        @include estilos-lista;
+        display: flex;
+        justify-content: flex-end;
+        gap: 6rem;
+        margin-top: 2rem;
+
+        .categoria {
+            @extend %estilos-lista-servicios;
+            width: 360px;
+
+            .barrita {
+                @include barrita(rgb(192, 192, 192));
+            }
+
+            ul {
+                @include ul-lista(rgb(192, 192, 192));
+            }
+        }
     }
+
 
 
     .contenedor-titulo-icon {
         display: flex;
         align-items: center;
         gap: 1rem;
-        
+
         .icono-aire {
             @include icono-card(#2abce9);
         }
+
         .icono-electricista {
             @include icono-card(rgb(247, 211, 55));
         }
+
         .icono-arreglos {
             @include icono-card(#c0c0c0);
         }
