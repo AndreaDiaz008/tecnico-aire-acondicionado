@@ -30,6 +30,7 @@
 
     &:hover {
         transform: scale(0.95);
+        color: $color-texto;
         box-shadow: .625rem .625rem 1.25rem rgba(10, 18, 54, 0.486);
 
     }
@@ -77,5 +78,26 @@
 
     li {
         @extend %texto-lista;
+    }
+}
+
+@mixin lista-servicios($color) {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+
+    .categoria {
+        @extend %estilos-lista-servicios;
+
+        .barrita {
+            @include barrita($color);
+        }
+
+        ul {
+            @include ul-lista($color);
+        }
     }
 }
