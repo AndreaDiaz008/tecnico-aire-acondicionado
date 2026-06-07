@@ -1,56 +1,72 @@
 @use 'variables' as *;
 
-
 header {
     background: linear-gradient(135deg, #0d0d1a, #00b4ff);
-    padding: 0.8rem 2rem;
+    padding: 0.4rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+
     z-index: 1000;
+
     box-shadow: 0 9px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav {
     display: flex;
-    gap: 1.5rem;
     align-items: center;
-}
+    gap: 1.5rem;
 
-a {
-    color: $color-texto;
-    font-size: 0.8rem;
-    text-decoration: none;
-    font-family: $fuente-principal;
-    transition: background-color 0.3s ease;
-    padding-right: 0.6rem;
+    a {
+        color: $color-texto;
+        font-size: 0.8rem;
+        text-decoration: none;
+        font-family: $fuente-principal;
 
-    &:hover {
-        color: $color-primario;
+        padding: .55rem 1rem;
+        border-radius: 999px;
+
+        transition: background-color .3s ease,
+            color .3s ease;
+
+        &:hover {
+            color: $color-primario;
+            background: rgba(255, 255, 255, .12);
+        }
+
+        &.active {
+            color: white;
+            background: rgba(255, 255, 255, .12);
+        }
     }
 }
 
 img {
-    height: 4rem;
+    height: 3rem;
     padding-left: 0.5rem;
 }
 
 body {
-    padding-top: 70px;
+    padding-top: 55px;
 }
 
 .btn-whatsapp {
     background-color: #25d366;
     color: white !important;
+
     padding: 0.5rem 1rem;
     border-radius: 1.5rem;
+
     display: flex;
     align-items: center;
     gap: 0.4rem;
+
+    transition: background-color .3s ease;
 
     &:hover {
         background-color: #1ebe5d;

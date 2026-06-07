@@ -1,7 +1,7 @@
 @charset "UTF-8";
 header {
   background: linear-gradient(135deg, #0d0d1a, #00b4ff);
-  padding: 0.8rem 2rem;
+  padding: 0.4rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,29 +15,34 @@ header {
 
 nav {
   display: flex;
-  gap: 1.5rem;
   align-items: center;
+  gap: 1.5rem;
 }
-
-a {
+nav a {
   color: #ffffff;
   font-size: 0.8rem;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  transition: background-color 0.3s ease;
-  padding-right: 0.6rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-a:hover {
+nav a:hover {
   color: #ffd82b;
+  background: rgba(255, 255, 255, 0.12);
+}
+nav a.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 img {
-  height: 4rem;
+  height: 3rem;
   padding-left: 0.5rem;
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 55px;
 }
 
 .btn-whatsapp {
@@ -48,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  transition: background-color 0.3s ease;
 }
 .btn-whatsapp:hover {
   background-color: #1ebe5d;
@@ -423,7 +429,7 @@ i {
   border-radius: 50px;
   text-align: center;
   font-size: 35px;
-  padding-left: 15px;
+  padding-left: 0.5%;
   z-index: 100;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.283);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
