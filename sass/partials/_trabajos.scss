@@ -2,8 +2,6 @@
 @use 'mixins' as *;
 @use 'extends' as *;
 
-@use 'variables' as *;
-
 /* =========================
    HERO
 ========================= */
@@ -14,6 +12,16 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+
+    .hero-trabajos-subtitulo {
+        font-size: .8rem;
+        font-family: $fuente-principal;
+        color: #00b4ff;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+
 
     .hero-trabajos-texto {
         max-width: 850px;
@@ -41,6 +49,8 @@
             line-height: 1.8;
             font-family: $fuente-principal;
         }
+
+
     }
 }
 

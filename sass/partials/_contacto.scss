@@ -1,0 +1,223 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'extends' as *;
+
+body {
+    background: $fondo-grandiente;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-contacto {
+    padding: 1rem 1rem;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .hero-contacto-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        max-width: 650px;
+
+        .hero-contacto-subtitulo {
+            font-size: .8rem;
+            font-family: $fuente-principal;
+            color: #00b4ff;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.0rem;
+            font-family: $fuente-principal;
+            color: white;
+            font-weight: 700;
+
+            span {
+                color: #00b4ff;
+            }
+        }
+
+        .barrita {
+            @include barrita(#00b4ff);
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: .95rem;
+            font-family: $fuente-principal;
+            color: #d6d6d6;
+            line-height: 1px;
+        }
+    }
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto-info {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 5rem;
+
+    .contacto-box {
+        display: flex;
+        max-width: 1000px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+    }
+
+    /* IZQUIERDA */
+
+    .contacto-izquierda {
+        width: 35%;
+        background: #09111f;
+        padding: 3rem 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+        .contacto-dato {
+
+            h3 {
+                font-size: .75rem;
+                color: #00b4ff;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: .5rem;
+                font-family: $fuente-principal;
+            }
+
+            p,
+            a {
+                color: #d4d4d4;
+                font-size: .9rem;
+                font-family: $fuente-principal;
+                text-decoration: none;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                transition: .3s;
+
+                &:hover {
+                    color: #00b4ff;
+                }
+            }
+        }
+    }
+
+    /* DERECHA */
+
+    .contacto-derecha {
+        width: 65%;
+        background: $color-terciario;
+        padding: 3rem;
+
+        h2 {
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            font-family: $fuente-principal;
+            font-weight: 700;
+        }
+
+        .form-grupo {
+            margin-bottom: 1.3rem;
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 1rem;
+                border: 1px solid #d8d8d8;
+                border-radius: 10px;
+                font-family: $fuente-principal;
+                font-size: .9rem;
+                transition: .3s;
+
+                &:focus {
+                    outline: none;
+                    border-color: #00b4ff;
+                }
+            }
+
+            textarea {
+                resize: none;
+                min-height: 140px;
+            }
+        }
+
+        button {
+            background: #00b4ff;
+            color: white;
+            border: none;
+            padding: .9rem 2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: $fuente-principal;
+            font-weight: 600;
+            transition: .3s;
+
+            &:hover {
+                background: #0094d1;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .contacto-info {
+
+        .contacto-box {
+            flex-direction: column;
+        }
+
+        .contacto-izquierda,
+        .contacto-derecha {
+            width: 100%;
+        }
+
+        .contacto-izquierda {
+            padding: 2rem;
+        }
+
+        .contacto-derecha {
+            padding: 2rem;
+        }
+    }
+
+    .hero-contacto {
+
+        .hero-contacto-texto {
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+}

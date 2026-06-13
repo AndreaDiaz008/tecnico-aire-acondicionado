@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Técnico en aire acondicionado - instalación y reparación">
+  <meta name="author" content="ElectroAir HVACOLD">
+  <meta name="description" content="Contactanos para solicitar un presupuesto de aire acondicionado o electricidad">
   <title>ElectroAir | Contacto</title>
   <link rel="stylesheet" href="../css/main.css">
   <link rel="icon" href="../assets/images/logo.png" type="image/png">
@@ -12,7 +13,8 @@
   <!-- FUENTES -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- BOOTSTRAP -->
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -36,54 +38,77 @@
 
   <main>
 
-    <h1>Contacto</h1>
-    <p>¿Tenés alguna consulta o querés pedir un presupuesto? Escribinos y te respondemos a la brevedad.</p>
-
-    <section class="formulario">
-      <h2>Envianos un mensaje</h2>
-      <form>
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Tu email" required>
-
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
-
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
-
-        <button type="submit">Enviar mensaje</button>
-      </form>
+    <!-- HERO -->
+    <section class="hero-contacto">
+      <div class="hero-contacto-texto">
+        <span class="hero-contacto-subtitulo">CONTACTO</span>
+        <h1>¿Necesitás un <span>presupuesto?</span></h1>
+        <div class="barrita"></div>
+        <p>Escribinos y te respondemos a la brevedad.</p>
+      </div>
     </section>
 
-    <section class="datos-contacto">
-      <h2>Nuestros datos</h2>
-      <p>Teléfono: +5491160213783 </p>
-      <p>Email: airconditioning@electroair.com</p>
-      <p>Dirección: Av. Siempre Viva 123 </p>
-      <p>Horario: Lunes a Viernes de 9:00 a 18:00</p>
+    <!-- CONTACTO -->
+    <section class="contacto-info">
+
+      <div class="contacto-box">
+        <div class="contacto-izquierda">
+          <div class="contacto-dato">
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/1160213783" target="_blank">+54 11 6021-3783</a>
+          </div>
+          <div class="contacto-dato">
+            <h3>Email</h3>
+            <a href="mailto:electroair.hvacold@gmail.com">electroair.hvacold@gmail.com</a>
+          </div>
+          <div class="contacto-dato">
+            <h3>Área de trabajo</h3>
+            <p>Zona Norte Gran Buenos Aires</p>
+            <p>Ciudad de Buenos Aires</p>
+          </div>
+          <div class="contacto-dato">
+            <h3>Seguinos</h3>
+            <a href="https://www.instagram.com/electroair.hvacold" target="_blank">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/1160213783" target="_blank">
+              <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contacto-derecha">
+          <h2>Formulario de Contacto</h2>
+          <div class="form-grupo">
+            <input type="text" placeholder="Tu nombre">
+          </div>
+          <div class="form-grupo">
+            <input type="email" placeholder="Tu correo electrónico">
+          </div>
+          <div class="form-grupo">
+            <textarea placeholder="Tu mensaje" rows="5"></textarea>
+          </div>
+          <button type="button">Enviar</button>
+        </div>
+
+      </div>
+
     </section>
 
   </main>
 
   <footer>
     <section class="footer-box">
-      <!-- PAGINAS -->
-
       <section class="pages-footer">
         <p class="titulos-footer">Navegar</p>
         <ul>
-          <li><a href="../index.html">Inicio</a> </li>
+          <li><a href="../index.html">Inicio</a></li>
           <li><a href="../pages/servicios.html">Servicios</a></li>
           <li><a href="../pages/nosotros.html">Nosotros</a></li>
           <li><a href="../pages/trabajos.html">Trabajos</a></li>
           <li><a href="../pages/contacto.html">Contacto</a></li>
         </ul>
       </section>
-
-      <!-- AREAS -->
       <section class="areas-footer">
         <p class="titulos-footer">Area de trabajo</p>
         <ul>
@@ -91,8 +116,6 @@
           <li>Ciudad de Buenos Aires</li>
         </ul>
       </section>
-
-      <!-- REDES -->
       <section class="redes-footer">
         <p class="titulos-footer">Seguinos en redes</p>
         <ul>
@@ -101,23 +124,23 @@
               <i class="bi bi-instagram"></i> Instagram
             </a>
           </li>
-
           <li>
             <a href="https://wa.me/1160213783" target="_blank">
               <i class="bi bi-whatsapp"></i> WhatsApp
             </a>
           </li>
-
         </ul>
       </section>
     </section>
-
     <section class="info-footer">
       <p>Profesionales Matriculados | Buenos Aires, Argentina</p>
       <p>ElectroAir HVACOLD &copy; 2025 — Todos los derechos reservados</p>
     </section>
-
   </footer>
+
+  <a href="https://wa.me/1160213783" class="float-wa" target="_blank">
+    <i class="fa fa-whatsapp" style="margin-top:16px;"></i>
+  </a>
 
 </body>
 
