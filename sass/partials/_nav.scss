@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'mixins' as *;
+@use 'extends' as *;
 
 header {
     background: linear-gradient(135deg, #0d0d1a, #5f5f5f);
@@ -71,5 +73,88 @@ body {
     &:hover {
         background-color: #1ebe5d;
         color: white !important;
+    }
+}
+
+/* =========================
+   MENU HAMBURGUESA
+========================= */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+        width: 28px;
+        height: 3px;
+        background: white;
+        border-radius: 10px;
+        transition: .3s;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .menu-btn {
+        display: flex;
+        z-index: 2000;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        width: 300px;
+        height: 100vh;
+
+        background: linear-gradient(135deg, #0d0d1a, #5f5f5f);
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        transition: .4s ease;
+
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    #menu-toggle:checked~nav {
+        right: 0;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: .8rem 1rem;
+    }
+
+    img {
+        height: 2.5rem;
+    }
+
+    nav {
+        width: 250px;
+    }
+
+    .btn-whatsapp {
+        font-size: .9rem;
     }
 }

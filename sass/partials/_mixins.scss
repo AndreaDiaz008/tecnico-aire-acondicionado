@@ -12,7 +12,8 @@
     p {
         font-size: $size-texto;
         font-family: $fuente-principal;
-        color:#cccccc;;
+        color: #cccccc;
+        ;
     }
 }
 
@@ -98,6 +99,20 @@
 
         ul {
             @include ul-lista($color);
+        }
+    }
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==tablet {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint ==mobile {
+        @media (max-width: 480px) {
+            @content;
         }
     }
 }

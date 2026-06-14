@@ -98,3 +98,61 @@ i {
     font-size: 1.2rem;
     margin-right: 5px;
 }
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-box {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 2rem !important;
+        justify-items: center;
+    }
+
+    .pages-footer,
+    .areas-footer,
+    .redes-footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pages-footer p,
+    .areas-footer p,
+    .redes-footer p {
+        text-align: center !important;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .footer-box {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem !important;
+    }
+
+    .pages-footer,
+    .areas-footer,
+    .redes-footer {
+        text-align: center;
+    }
+
+    .pages-footer p,
+    .areas-footer p,
+    .redes-footer p {
+        text-align: center !important;
+    }
+}
